@@ -1,33 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textSize="@dimen/_10sdp">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/transparent_black_hex_8"
+                    android:text="Phonepe/GooglePay/Paytm">
+                </TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/transparent_black_hex_3">
+                </View>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/rb_googlepay"
+                            android:text=" "
+                            android:onClick="OnRadioButtonClick"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_gravity="center"
+                            android:src="@color/blue">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Black"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_12ssp"
+                            android:text="GooglePay">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/rb_phonepe"
+                            android:text=" "
+                            android:onClick="OnRadioButtonClick"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_gravity="center"
+                            android:src="@color/blue">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Black"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_12ssp"
+                            android:text="PhonePe">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/rb_paytm"
+                            android:text=" "
+                            android:onClick="OnRadioButtonClick"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_gravity="center"
+                            android:src="@color/blue">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Black"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_12ssp"
+                            android:text="Paytm">
+                        </TextView>
+                    </LinearLayout>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/txt_50"
-        android:layout_width="@dimen/_150sdp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:background="@color/orange"
-        android:gravity="center"
-        android:maxLines="1"
-        android:padding="@dimen/_10sdp"
-        android:text="50 ₹"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/_18ssp"
-        android:textStyle="bold" />
-    <Button
-        android:id="@+id/btn_pay"
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:background="@color/Black"
-        android:gravity="center"
-        android:padding="@dimen/_10sdp"
-        android:text="Pay"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/_18ssp"
-        android:textStyle="bold" />
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:gravity="bottom"
+        android:background="@drawable/round">
+        <TextView
+            android:id="@+id/txt_50"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Total :  50 ₹"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:background="@color/Black"
+            android:gravity="center"
+            android:text="Proceed"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
 </LinearLayout>

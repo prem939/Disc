@@ -95,6 +95,8 @@ public class PaymentFragment extends Fragment implements View.OnClickListener {
         }
     }
     public void setText(String amount){
+        if(edt_custompay.getText().toString() !=null)
+            edt_custompay.getText().clear();
         txt_topay.setText(amount + " ₹");
         str_amount = amount;
     }

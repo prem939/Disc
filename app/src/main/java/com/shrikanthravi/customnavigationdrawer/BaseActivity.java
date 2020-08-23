@@ -14,12 +14,14 @@ import android.support.v7.app.AppCompatActivity;
 public abstract class BaseActivity extends FragmentActivity {
     public LayoutInflater inflater;
     public LinearLayout llBody;
+    public Preference preference;
     @SuppressLint("ResourceAsColor")
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.base);
 
+        preference = new Preference(getApplicationContext());
         inflater = this.getLayoutInflater();
         initialization();
         initialize();
