@@ -86,4 +86,6 @@
     <color name="transparent_white_percent_95">#F2ffffff</color>
     <color name="AppDark">#000000</color>
     <color name="AppLight">#ffffff</color>
+
+    <color name="transparent">#00000000</color>
 </resources>

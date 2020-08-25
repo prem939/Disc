@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_screen"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Name"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:background="@drawable/round"
+        android:imeOptions="actionNext"
+        android:paddingLeft="@dimen/_15sdp"
+        android:singleLine="true"
+        android:textSize="@dimen/_15ssp" />
+    <EditText
+        android:id="@+id/etPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:drawableLeft="@drawable/no"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Phone No"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:background="@drawable/round"
+        android:imeOptions="actionNext"
+        android:paddingLeft="@dimen/_15sdp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="@dimen/_15ssp" />
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:hint="Otp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:background="@drawable/round"
+        android:imeOptions="actionNext"
+        android:paddingLeft="@dimen/_15sdp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:visibility="gone"
+        android:textSize="@dimen/_15ssp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center">
+    <Button
+        android:id="@+id/btnotp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/round_btn"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:text="Generate Otp"
+        android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/round_btn"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:text="SignUp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
