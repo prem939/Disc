@@ -6,7 +6,7 @@
     android:id="@+id/llNavigationdraw"
     android:layout_height="match_parent"
     tools:context=".NavigationBarActivity">
-    <com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer
+    <com.mazhar.customnavigationdrawer2.widget.SNavigationDrawer
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/navigationDrawer">
@@ -15,5 +15,5 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-    </com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer>
+    </com.mazhar.customnavigationdrawer2.widget.SNavigationDrawer>
 </LinearLayout>

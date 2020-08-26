@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">Custom Navigation Drawer</string>
+    <string name="app_name">Dice Club</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_league_text">Play With Rs.25 Win: 2000</string>
+    <string name="second_league_text">Play With Rs.50 Win: 5000</string>
+    <string name="third_league_text">Play With Rs.100 Win: 10000</string>
 </resources>

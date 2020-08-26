@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.shrikanthravi.customnavigationdrawer">
+    package="com.mazhar.diceclub">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,22 +13,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".SplashScreen"
-            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+        <activity android:name="com.mazhar.diceclub.ActivitySplashScreen"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".PaymentActivity"
+            android:name="com.mazhar.diceclub.NavigationBarActivity"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+
+        </activity>
+
+        <activity
+            android:name="com.mazhar.diceclub.PaymentActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.mazhar.diceclub.LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />

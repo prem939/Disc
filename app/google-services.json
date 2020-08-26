@@ -1,42 +1,71 @@
 {
   "project_info": {
-    "project_number": "573086189882",
-    "firebase_url": "https://disc-bd3cd.firebaseio.com",
-    "project_id": "disc-bd3cd",
-    "storage_bucket": "disc-bd3cd.appspot.com"
+    "project_number": "35845274163",
+    "firebase_url": "https://dice-club-2d6f7.firebaseio.com",
+    "project_id": "dice-club-2d6f7",
+    "storage_bucket": "dice-club-2d6f7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:573086189882:android:3b86805b78d69873eae803",
+        "mobilesdk_app_id": "1:35845274163:android:f0de2bdc35253112e48146",
         "android_client_info": {
-          "package_name": "com.shrikanthravi.customnavigationdrawer"
+          "package_name": "com.mazhar.diceclub"
         }
       },
       "oauth_client": [
         {
-          "client_id": "573086189882-mb8smsmsp391q9knq62n7p351hqjvbfk.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.shrikanthravi.customnavigationdrawer",
-            "certificate_hash": "8f3120b1e5f8d3463599286da4e99e5e637b3c7e"
-          }
-        },
-        {
-          "client_id": "573086189882-l77o832pf4avc6v9oj79ll6knbf8pbut.apps.googleusercontent.com",
+          "client_id": "35845274163-oi85l705uroeq58somkuuc6o782vs976.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD4StAM0pnbaQotcD7T40K0IwYEfYYqHHE"
+          "current_key": "AIzaSyD1uTh9q6WZuu_z1FXAudQXzUfm1DBlPV0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "573086189882-l77o832pf4avc6v9oj79ll6knbf8pbut.apps.googleusercontent.com",
+              "client_id": "35845274163-oi85l705uroeq58somkuuc6o782vs976.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35845274163:android:1e678c7062d1ae3ee48146",
+        "android_client_info": {
+          "package_name": "com.shrikanthravi.customnavigationdrawer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35845274163-skaiou5vbail7r410ljbtusnvm7a9vdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shrikanthravi.customnavigationdrawer",
+            "certificate_hash": "41cd191e5e4eabb13541676345d5a785a8309835"
+          }
+        },
+        {
+          "client_id": "35845274163-oi85l705uroeq58somkuuc6o782vs976.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1uTh9q6WZuu_z1FXAudQXzUfm1DBlPV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35845274163-oi85l705uroeq58somkuuc6o782vs976.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,108 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#002147"
     tools:context=".PaymentFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/deposit_background">
 
-        <TextView
-            android:id="@+id/txt_25"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:background="@color/green"
-            android:gravity="center"
-            android:maxLines="1"
-            android:padding="@dimen/_10sdp"
-            android:text="25 ₹"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/_18ssp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txt_50"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:background="@color/orange"
-            android:gravity="center"
-            android:maxLines="1"
-            android:padding="@dimen/_10sdp"
-            android:text="50 ₹"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/_18ssp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txt_100"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:background="@color/blue"
-            android:gravity="center"
-            android:maxLines="1"
-            android:padding="@dimen/_10sdp"
-            android:text="100 ₹"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/_18ssp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/edt_custom"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:background="@drawable/round"
-            android:gravity="center"
-            android:hint="Bet Amount"
-            android:maxLines="1"
-            android:padding="@dimen/_10sdp"
-            android:text=""
-            android:inputType="numberSigned"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/_18ssp"
-            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:src="@drawable/dice_club_o_logo"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:padding="@dimen/_20sdp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/txt_topay"
-                android:layout_width="@dimen/_100sdp"
+                android:id="@+id/text_wallet_amount"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:maxLines="1"
-                android:padding="@dimen/_10sdp"
-                android:text="0 ₹"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/_18ssp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="Wallet"/>
 
-            <Button
-                android:id="@+id/btn_pay"
-                android:layout_width="@dimen/_100sdp"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/Black"
-                android:gravity="center"
-                android:hint="Bet Amount"
-                android:maxLines="1"
-                android:padding="@dimen/_10sdp"
-                android:text="Pay"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/_18ssp"
-                android:textStyle="bold" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_RS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="Rs."/>
+
+                <TextView
+                    android:id="@+id/wallet_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="0"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/text_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Select a Payment Mode"/>
+
+    <LinearLayout
+        android:id="@+id/llGooglePay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/deposit_background">
+
+        <ImageView
+            android:id="@+id/gPay"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:src="@drawable/gpay"/>
+
+        <TextView
+            android:id="@+id/text_googlepe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="Google Pay"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPhonePe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/deposit_background"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/phonePe"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:src="@drawable/phonepe_small_icon"/>
+
+        <TextView
+            android:id="@+id/text_phonepe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="PhonePe"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPayTm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/deposit_background"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/payTm"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:src="@drawable/paytm_small_icon"/>
+
+        <TextView
+            android:id="@+id/text_paytm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="PayTm"/>
+
+    </LinearLayout>
+
+</LinearLayout>
